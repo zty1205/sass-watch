@@ -1,0 +1,10 @@
+@charset "utf-8";
+
+// 圆形盒子
+@mixin circle($size: 11px,$bg: #fff) {
+    border-radius: 50%;
+    width: $size;
+    height: $size;
+    line-height: $size;
+    background: $bg;
+}

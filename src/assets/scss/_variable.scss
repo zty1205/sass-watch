@@ -1,0 +1,29 @@
+@charset "utf-8";
+
+// 变量 number 和 string
+$one: 1;
+$five: 5;
+$onePX: 1px;
+$str1: "left";
+$str2: "px";
+
+// 变量null
+$null: NULL;
+
+// 变量 布尔值
+$B_True: true;
+$B_False: false;
+
+// 变量 颜色值
+$color1: rgb(10,10,10);
+$color2: rgb(100,100,100);
+$color3: rgba(20,20,20,.4);
+$color4: rgba(20,20,20,.4);
+$color5: rgba(20,20,20,.6);
+
+// 变量 数组
+$arr1: 10px 20px 30px 40px;
+$arr2: 1px, 2px, 3px, 4px;
+
+// 变量 map
+$dir: (left: 20px, top: 10px, right: 5px);

@@ -1,0 +1,14 @@
+@charset "utf-8";
+
+// 最小值 + 最小值
+// @function plusMinMax($var...) {
+//   @return min($var) + max($var);
+// }
+
+@function multiple($num, $multiple) {
+  @if type-of($num) == 'number' and type-of($multiple) == 'number' {
+    @return $num * $multiple;
+  } @else {
+    @return $num;
+  }
+}
