@@ -1,11 +1,17 @@
 @charset "utf-8";
 
+// 全局变量
+
 // 变量 number 和 string
 $one: 1;
-$five: 5;
+$four: 4;
 $onePX: 1px;
-$str1: "left";
-$str2: "px";
+$fivePX: 5px;
+$px: px;
+$oneHundred: 100;
+$fiveHundred: 500;
+$strLeft: "left";
+$strPX: "px";
 
 // 变量null
 $null: NULL;

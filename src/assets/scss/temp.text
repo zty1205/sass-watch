@@ -1,0 +1,95 @@
+/*
+// 变量 
+$border-red: 1px solid red;
+$ten: 10px;
+$arr: 10px 20px 30px 40px 50px;
+$map: (top: 10px, left: 20px);
+$c1: #333;
+$c2: #666;
+$c2: #999;
+
+// 混合器
+@mixin line ($lh, $line: 1){
+    line-height: $lh;
+    height: $lh * $line;
+    @content;
+}
+// 函数 
+@function bigNum($num) {
+    @if $num < 5 {
+        @return $num -2;
+    } 
+    @else {
+        @return $num * 2
+    } 
+}
+
+.box {
+    height: bigNum(60px);
+    width: 100%;
+    position: relative;
+    @include border-before(100%, 0, auto, auto, 0, 0, bottom, #a10, y)
+}
+
+// & 父选择符
+.parent {
+    @include line(15px, 3) {
+        border: $border-red;
+    };
+    & .child {
+        color: $c1 + $c2;
+        @at-root .son {
+            width: 1px;
+            height: 1px;
+        }
+    }
+}
+
+// for from to 遍历
+@for $v1 from 12 to 16 {
+    .fs-#{$v1} {
+        font-size: $v1;
+    }
+}
+
+// for from through 遍历
+@for $v1 from 12 through 16 {
+    .fs2-#{$v1} {
+        font-size: $v1;
+    }
+}
+
+// while 循环
+$a:5;
+@while($a >= 1){
+
+  .aaa_#{$a}{
+    width: 20px * $a;
+  }
+  @debug $a; // 5 4 3 2 1
+  $a:$a - 1;
+} 
+
+// for in 遍历数组
+@each $var in $arr {
+    .ml-#{$var} {
+        margin-left: $var;
+    }
+}
+
+@each $k, $v in $map {
+    .ml-#{$k} {
+        position: relative;
+        top: $v;
+        left: $v;
+    }
+}
+
+.class1 {
+    @include one-border() {
+        display: flex;
+        align-items:center;
+        border: none;
+    }
+}
+*/
