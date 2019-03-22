@@ -1,1 +1,20 @@
 @charset "utf-8";
+
+$adColorMap: (
+    2: #00cc00, // 2、预定
+    3: #0066ff, // 3 售出
+    4: gray // 4.素材已上传
+    // 5: #ff6600 // 5 冲突
+  );
+
+  @each $k, $color in $adColorMap {
+
+    .label-status-#{$k} {
+      background-color: $color;
+    }
+
+    .color-status-#{$k} {
+      background-color: $color;
+      cursor: pointer;
+    }
+  }
